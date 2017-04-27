@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+resources :user
+resources :posts do
+  resources :comments
+end
 
-get '/user_profile_page' => 'users#show'
-get '/posts_page' => 'posts#index'
+#get '/posts_page' => 'posts#index'
 get '/sign_up' => 'users#sign_up'
 get '/sign_in' => 'users#sign_in'
 get '/sign_out' => 'users#sign_out'
