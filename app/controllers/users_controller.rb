@@ -13,7 +13,7 @@ class UsersController < ApplicationController
  end
 
  def sign_in
-
+   puts "THIS IS THE SIGN IN METHOD"
  end
 
  def show

@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class ProfileTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+belongs_to :user
+has_many :posts
 end
